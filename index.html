@@ -1,184 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soumyadeep Nath | Portfolio</title>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-  <style>
-    body { font-family: 'Inter', system-ui, sans-serif; }
-
-    .hero-bg {
-      background: linear-gradient(135deg, #0a0a0a 0%, #111827 100%);
-    }
-
-    .gold {
-      color: #c9a84c;
-    }
-
-    .gold-bg {
-      background-color: #c9a84c;
-    }
-
-    .gold-border {
-      border-color: #c9a84c;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soumyadeep Nath – Data Scientist & Analyst | IIT Roorkee Executive PG in Data Science & AI | Generative AI & RAG Specialist">
+    <meta name="keywords" content="Data Scientist, Data Analyst, Generative AI, RAG, Python, SQL, Machine Learning, IIT Roorkee">
+    <meta name="author" content="Soumyadeep Nath">
+    
+    <meta property="og:title" content="Soumyadeep Nath – Data Scientist & Analyst">
+    <meta property="og:description" content="Building production AI applications with Python, LLMs, and full-stack development">
+    <meta property="og:image" content="profile.jpg">
+    <meta property="og:url" content="https://YOUR-DOMAIN.com">
+    <meta property="og:type" content="website">
+    
+    <title>Soumyadeep Nath | Data Scientist & Analyst</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        
+        :root { --gold: #c9a84c; }
+        
+        * { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+        
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .heading-font { font-family: 'Space Grotesk', sans-serif; }
+        
+        .navbar-link {
+            position: relative;
+        }
+        .navbar-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #c9a84c;
+        }
+        .navbar-link:hover:after { width: 100%; }
+        
+        .section-header:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, #c9a84c, transparent);
+            bottom: -8px;
+            left: 0;
+        }
+        
+        .gold-button {
+            background: linear-gradient(90deg, #c9a84c, #e8c46a);
+            color: #111827;
+            font-weight: 600;
+        }
+        
+        .profile-img {
+            transition: transform 0.4s ease;
+        }
+        .profile-img:hover {
+            transform: scale(1.03);
+        }
+    </style>
 </head>
+<body class="bg-[#0a0a0a] text-zinc-200">
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/95 backdrop-blur-lg border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'})" 
+               class="flex items-center gap-2 text-2xl font-semibold heading-font tracking-tighter">
+                <span class="text-white">Soumyadeep</span>
+                <span class="text-[#c9a84c]">Nath</span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="#about" class="navbar-link text-zinc-300 hover:text-white">About</a>
+                <a href="#skills" class="navbar-link text-zinc-300 hover:text-white">Skills</a>
+                <a href="#experience" class="navbar-link text-zinc-300 hover:text-white">Experience</a>
+                <a href="#projects" class="navbar-link text-zinc-300 hover:text-white">Projects</a>
+                <a href="#education" class="navbar-link text-zinc-300 hover:text-white">Education</a>
+                <a href="#contact" class="navbar-link text-zinc-300 hover:text-white">Contact</a>
+            </div>
+            
+            <button onclick="toggleMobileMenu()" class="md:hidden text-2xl text-[#c9a84c]">
+                <i id="mobile-icon" class="fa-solid fa-bars"></i>
+            </button>
+            
+            <a href="resume.pdf" target="_blank" 
+               class="hidden md:flex items-center gap-2 px-6 py-3 rounded-2xl gold-button text-sm">
+                <i class="fa-solid fa-download"></i>
+                Resume
+            </a>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0a0a0a] border-t border-zinc-800 px-6 py-6">
+            <div class="flex flex-col gap-4 text-base">
+                <a href="#about" onclick="toggleMobileMenu()" class="py-2">About</a>
+                <a href="#skills" onclick="toggleMobileMenu()" class="py-2">Skills</a>
+                <a href="#experience" onclick="toggleMobileMenu()" class="py-2">Experience</a>
+                <a href="#projects" onclick="toggleMobileMenu()" class="py-2">Projects</a>
+                <a href="#education" onclick="toggleMobileMenu()" class="py-2">Education</a>
+                <a href="#contact" onclick="toggleMobileMenu()" class="py-2">Contact</a>
+                <a href="resume.pdf" target="_blank" class="mt-4 flex justify-center gap-2 py-3 rounded-2xl gold-button">
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </nav>
 
-<body class="bg-black text-zinc-200">
+    <!-- HERO -->
+    <header class="pt-24 pb-20 md:pt-32 md:pb-28">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7">
+                <div class="inline-flex items-center gap-2 px-4 h-8 bg-white/5 border border-white/10 rounded-3xl text-sm text-[#c9a84c] mb-6">
+                    <div class="w-2 h-2 rounded-full bg-[#c9a84c] animate-pulse"></div>
+                    OPEN TO DATA SCIENCE ROLES
+                </div>
+                
+                <h1 class="heading-font text-6xl md:text-7xl font-semibold tracking-tighter mb-3">Soumyadeep Nath</h1>
+                <h2 class="text-4xl md:text-5xl text-[#c9a84c] font-semibold mb-6">Data Scientist &amp; Analyst</h2>
+                
+                <p class="text-xl text-zinc-400 max-w-lg">
+                    IIT Roorkee Executive PG in Data Science &amp; AI | Building production AI applications with LLMs, RAG &amp; full-stack development
+                </p>
+                
+                <div class="flex flex-wrap gap-4 mt-10">
+                    <a href="#projects" class="px-8 py-4 bg-white text-black font-semibold rounded-3xl flex items-center gap-3">
+                        <i class="fa-solid fa-rocket"></i> View Projects
+                    </a>
+                    <a href="resume.pdf" target="_blank" class="px-8 py-4 border border-[#c9a84c] text-[#c9a84c] font-semibold rounded-3xl flex items-center gap-3 hover:bg-[#c9a84c] hover:text-black">
+                        <i class="fa-solid fa-download"></i> Resume
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:col-span-5 flex justify-center md:justify-end">
+                <div class="relative">
+                    <div class="absolute -inset-6 bg-gradient-to-br from-[#c9a84c]/20 rounded-[3rem] -rotate-6"></div>
+                    <img src="profile.jpg" alt="Soumyadeep Nath" 
+                         class="profile-img relative w-80 h-80 md:w-96 md:h-96 object-cover rounded-3xl border border-[#c9a84c]/30 shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </header>
 
-<!-- Navbar -->
-<nav class="fixed top-0 w-full bg-black/80 backdrop-blur-md z-50 border-b border-zinc-800">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <a href="#" class="text-2xl font-bold gold">Soumyadeep Nath </a>
-    <div class="flex gap-8 text-sm">
-      <a href="#about" class="hover:text-yellow-500">About</a>
-      <a href="#skills" class="hover:text-yellow-500">Skills</a>
-      <a href="#resume" class="hover:text-yellow-500">Resume</a>
-      <a href="#projects" class="hover:text-yellow-500">Projects</a>
-      <a href="#contact" class="hover:text-yellow-500">Contact</a>
-    </div>
-  </div>
-</nav>
+    <!-- ABOUT -->
+    <section id="about" class="py-20 border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12">
+                <div class="md:col-span-5">
+                    <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-6">My Story</h2>
+                </div>
+                <div class="md:col-span-7 text-lg text-zinc-300 leading-relaxed">
+                    <p class="mb-6">
+                        With a strong foundation in English Literature from Presidency University and hands-on technical training 
+                        through IIT Roorkee’s Executive PG Programme in Data Science &amp; AI, I bring a unique blend of analytical 
+                        thinking, clear communication, and production-grade AI development skills.
+                    </p>
+                    <p>
+                        Currently building real-world AI applications like <strong>AlignResume</strong> — an intelligent resume optimization platform powered by Groq’s LLaMA 3.3.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Hero -->
-<section class="hero-bg min-h-screen flex items-center pt-20">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <!-- SKILLS -->
+    <section id="skills" class="py-20 bg-[#111113]">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-12">Skills</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-8">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-3"><i class="fa-solid fa-code text-[#c9a84c]"></i> Languages</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">Python</span>
+                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">SQL</span>
+                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">TypeScript</span>
+                    </div>
+                </div>
+                <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-8">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-3"><i class="fa-solid fa-brain text-[#c9a84c]"></i> Machine Learning &amp; GenAI</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">scikit-learn</span>
+                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">RAG</span>
+                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">LLM APIs (Groq, OpenAI)</span>
+                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">Prompt Engineering</span>
+                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">FAISS / Chroma</span>
+                    </div>
+                </div>
+                <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-8">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-3"><i class="fa-solid fa-chart-line text-[#c9a84c]"></i> Data &amp; Visualization</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">Pandas</span>
+                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">NumPy</span>
+                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">Matplotlib / Seaborn</span>
+                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">Plotly</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div>
-      <h1 class="text-6xl md:text-7xl font-bold mb-4">
-        Hi, I'm <span class="gold">Soumyadeep</span>
-      </h1>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-12">Experience</h2>
+            
+            <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-10">
+                <div class="flex justify-between items-start mb-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold">Data Science Learner (Executive PG Programme)</h3>
+                        <p class="text-[#c9a84c]">IIT Roorkee • Roorkee, India</p>
+                    </div>
+                    <p class="text-sm text-zinc-400">Feb 2026 – Present</p>
+                </div>
+                <ul class="space-y-4 text-zinc-300">
+                    <li class="flex gap-4"><i class="fa-solid fa-circle-check text-[#c9a84c] mt-1.5"></i> Engineered data pipelines and automated ETL workflows using Python (Pandas, NumPy).</li>
+                    <li class="flex gap-4"><i class="fa-solid fa-circle-check text-[#c9a84c] mt-1.5"></i> Queried relational databases using advanced SQL (window functions, joins, subqueries).</li>
+                    <li class="flex gap-4"><i class="fa-solid fa-circle-check text-[#c9a84c] mt-1.5"></i> Built EDA frameworks with statistical reasoning, hypothesis testing, and A/B testing.</li>
+                    <li class="flex gap-4"><i class="fa-solid fa-circle-check text-[#c9a84c] mt-1.5"></i> Developed supervised ML models (Random Forest, Gradient Boosting) using scikit-learn.</li>
+                    <li class="flex gap-4"><i class="fa-solid fa-circle-check text-[#c9a84c] mt-1.5"></i> Implemented Generative AI applications with LLM APIs, structured prompts, and RAG systems (FAISS/Chroma).</li>
+                    <li class="flex gap-4"><i class="fa-solid fa-circle-check text-[#c9a84c] mt-1.5"></i> Created interactive dashboards and reproducible Jupyter notebooks.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-      <p class="text-2xl text-zinc-400 mb-4">
-        Data Analyst & Data Scientist
-      </p>
+    <!-- PROJECTS -->
+    <section id="projects" class="py-20 bg-[#111113]">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-4">Featured Projects</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden">
+                    <div class="h-2 bg-gradient-to-r from-[#c9a84c] to-amber-400"></div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-1">AlignResume — AI-Powered Resume Optimization Platform</h3>
+                        <p class="text-[#c9a84c] text-sm mb-6">May 2026 • Live Project</p>
+                        
+                        <p class="text-zinc-400 mb-8">
+                            Full-stack AI application that parses resumes and job descriptions, scores alignment, and generates 
+                            ATS-optimized bullet points using Groq (LLaMA 3.3 70B) with truthfulness guardrails.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">Next.js</span>
+                            <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">TypeScript</span>
+                            <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">Groq API</span>
+                            <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">RAG</span>
+                            <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">Playwright</span>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <a href="https://align-resume-beta.vercel.app" target="_blank" class="text-[#c9a84c] font-medium flex items-center gap-2">
+                                Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/sdn9300/align-resume" target="_blank" class="text-[#c9a84c] font-medium flex items-center gap-2">
+                                GitHub <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <p class="text-lg text-zinc-400 max-w-md mb-8">
-        Turning data into actionable insights using Python, SQL, and machine learning.
-      </p>
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section id="education" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-12">Education &amp; Certifications</h2>
+            
+            <div class="space-y-12">
+                <div>
+                    <div class="flex justify-between">
+                        <h3 class="text-2xl font-semibold">Executive PG Programme in Data Science &amp; AI</h3>
+                        <span class="text-zinc-400">Feb 2026 – Present</span>
+                    </div>
+                    <p class="text-[#c9a84c]">Indian Institute of Technology (IIT) Roorkee</p>
+                </div>
+                
+                <div>
+                    <div class="flex justify-between">
+                        <h3 class="text-2xl font-semibold">M.A. in English Literature (First Division)</h3>
+                        <span class="text-zinc-400">Oct 2022 – Jul 2024</span>
+                    </div>
+                    <p class="text-[#c9a84c]">Presidency University, Kolkata</p>
+                </div>
+                
+                <div>
+                    <div class="flex justify-between">
+                        <h3 class="text-2xl font-semibold">B.A. Honours in English Literature (First Division)</h3>
+                        <span class="text-zinc-400">Sep 2019 – Jul 2022</span>
+                    </div>
+                    <p class="text-[#c9a84c]">Presidency University, Kolkata</p>
+                </div>
+            </div>
+            
+            <div class="mt-16">
+                <h3 class="text-2xl font-semibold mb-8 flex items-center gap-3">
+                    <i class="fa-solid fa-award text-[#c9a84c]"></i> Certifications
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-zinc-900/50 border border-white/10 rounded-3xl p-6">
+                        <p class="font-semibold">Machine Learning Statistical Foundations Professional Certificate</p>
+                        <p class="text-sm text-zinc-400 mt-2">LinkedIn Learning × Wolfram Research • Mar 2026</p>
+                    </div>
+                    <div class="bg-zinc-900/50 border border-white/10 rounded-3xl p-6">
+                        <p class="font-semibold">Anaconda Python for Data Science Professional Certificate</p>
+                        <p class="text-sm text-zinc-400 mt-2">LinkedIn Learning × Anaconda • Mar 2026</p>
+                    </div>
+                    <div class="bg-zinc-900/50 border border-white/10 rounded-3xl p-6">
+                        <p class="font-semibold">Career Essentials in Generative AI</p>
+                        <p class="text-sm text-zinc-400 mt-2">LinkedIn Learning × Microsoft • Mar 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <div class="flex gap-4">
-        <a href="#projects" class="gold-bg text-black px-6 py-3 rounded-xl font-semibold hover:opacity-90">See My Work</a>
-        <a href="#contact" class="border gold-border px-6 py-3 rounded-xl font-semibold hover:text-yellow-500">Contact</a>
-      </div>
-    </div>
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 bg-[#111113]">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-8">Let's Connect</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <a href="mailto:soumyadeep9300@gmail.com" class="flex items-center gap-4 text-xl hover:text-[#c9a84c]">
+                        <i class="fa-solid fa-envelope"></i> soumyadeep9300@gmail.com
+                    </a>
+                    <a href="tel:+918777828419" class="mt-6 flex items-center gap-4 text-xl hover:text-[#c9a84c]">
+                        <i class="fa-solid fa-phone"></i> +91 87778 28419
+                    </a>
+                </div>
+                <div class="flex gap-8">
+                    <a href="https://github.com/sdn9300" target="_blank" class="flex flex-col items-center">
+                        <i class="fa-brands fa-github text-5xl text-[#c9a84c]"></i>
+                        <span class="mt-3 text-sm">GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/soumyadeep-nath-941780250" target="_blank" class="flex flex-col items-center">
+                        <i class="fa-brands fa-linkedin text-5xl text-[#c9a84c]"></i>
+                        <span class="mt-3 text-sm">LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="flex justify-center">
-      <img src="https://raw.githubusercontent.com/sdn9300/sdn9300.github.io/main/profile.jpg"
-           class="w-72 h-72 object-cover rounded-2xl border-4 gold-border shadow-xl">
-    </div>
+    <footer class="py-10 text-center text-xs text-zinc-500 border-t border-zinc-900">
+        © 2026 Soumyadeep Nath • Built as a high-conversion personal website
+    </footer>
 
-  </div>
-</section>
-
-<!-- About -->
-<section id="about" class="py-20 bg-zinc-900">
-  <div class="max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-4xl font-bold mb-8 gold">About Me</h2>
-
-    <p class="text-lg text-zinc-300 leading-relaxed">
-      I am a Data Analyst and Data Scientist with hands-on experience in data analysis, data cleaning, and visualization. 
-      I specialize in extracting meaningful patterns from large datasets using Python, SQL, and modern analytical tools. 
-      I focus on transforming complex data into actionable insights that support business decision-making.
-    </p>
-
-  </div>
-</section>
-
-<!-- Skills -->
-<section id="skills" class="py-20 bg-black">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-4xl font-bold mb-12 text-center gold">Skills & Tools</h2>
-
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
-
-      <div class="bg-zinc-900 p-5 rounded-xl border border-zinc-800 hover:border-yellow-500">Python</div>
-      <div class="bg-zinc-900 p-5 rounded-xl border border-zinc-800 hover:border-yellow-500">SQL</div>
-      <div class="bg-zinc-900 p-5 rounded-xl border border-zinc-800 hover:border-yellow-500">Pandas</div>
-      <div class="bg-zinc-900 p-5 rounded-xl border border-zinc-800 hover:border-yellow-500">NumPy</div>
-      <div class="bg-zinc-900 p-5 rounded-xl border border-zinc-800 hover:border-yellow-500">Data Analysis</div>
-      <div class="bg-zinc-900 p-5 rounded-xl border border-zinc-800 hover:border-yellow-500">Data Cleaning</div>
-      <div class="bg-zinc-900 p-5 rounded-xl border border-zinc-800 hover:border-yellow-500">Data Visualization</div>
-      <div class="bg-zinc-900 p-5 rounded-xl border border-zinc-800 hover:border-yellow-500">Matplotlib</div>
-      <div class="bg-zinc-900 p-5 rounded-xl border border-zinc-800 hover:border-yellow-500">Seaborn</div>
-      <div class="bg-zinc-900 p-5 rounded-xl border border-zinc-800 hover:border-yellow-500">Jupyter Notebook</div>
-      <div class="bg-zinc-900 p-5 rounded-xl border border-zinc-800 hover:border-yellow-500">Machine Learning</div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Resume -->
-<section id="resume" class="py-20 bg-zinc-900 text-center">
-  <h2 class="text-4xl font-bold mb-6 gold">Resume</h2>
-
-  <p class="text-zinc-400 mb-8">
-    Download my resume.
-  </p>
-
-  <div class="flex justify-center gap-4 flex-wrap">
-
-    <a href="https://raw.githubusercontent.com/sdn9300/sdn9300.github.io/main/resume.pdf"
-       download
-       class="border gold-border px-8 py-3 rounded-xl font-semibold">
-       Download Resume
-    </a>
-
-  </div>
-</section>
-
-<!-- Projects -->
-<section id="projects" class="py-20 bg-black text-center">
-  <h2 class="text-4xl font-bold mb-8 gold">Projects</h2>
-
-  <p class="text-zinc-400">
-    Projects will be added soon.
-  </p>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="py-20 bg-zinc-900 text-center">
-  <h2 class="text-4xl font-bold mb-8 gold">Let's Connect</h2>
-
-  <div class="flex justify-center gap-8 text-3xl mb-8 flex-wrap">
-
-    <a href="https://www.linkedin.com/in/soumyadeep-nath-941780250" target="_blank" class="hover:text-yellow-500">
-      <i class="fab fa-linkedin"></i>
-    </a>
-
-    <a href="https://github.com/sdn9300" target="_blank" class="hover:text-yellow-500">
-      <i class="fab fa-github"></i>
-    </a>
-
-    <a href="https://www.kaggle.com/" target="_blank" class="hover:text-yellow-500">
-      <i class="fas fa-chart-line"></i>
-    </a>
-
-    <a href="mailto:soumyadeep9300@gmail.com" class="hover:text-yellow-500">
-      <i class="fas fa-envelope"></i>
-    </a>
-
-    <span class="text-sm text-zinc-400 flex items-center">
-      📞 8777828419
-    </span>
-
-  </div>
-
-  <a href="mailto:soumyadeep9300@gmail.com"
-     class="gold-bg text-black px-8 py-3 rounded-xl font-semibold hover:opacity-90">
-    Send Email
-  </a>
-</section>
-
-<!-- Footer -->
-<footer class="bg-black py-6 text-center text-zinc-500 text-sm">
-  © 2026 Soumyadeep Nath
-</footer>
-
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('mobile-icon');
+            menu.classList.toggle('hidden');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-xmark');
+        }
+    </script>
 </body>
 </html>
