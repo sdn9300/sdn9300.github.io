@@ -4,15 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Soumyadeep Nath – Data Scientist & Analyst | IIT Roorkee Executive PG in Data Science & AI | Generative AI & RAG Specialist">
-    <meta name="keywords" content="Data Scientist, Data Analyst, Generative AI, RAG, Python, SQL, Machine Learning, IIT Roorkee">
-    <meta name="author" content="Soumyadeep Nath">
-    
-    <meta property="og:title" content="Soumyadeep Nath – Data Scientist & Analyst">
-    <meta property="og:description" content="Building production AI applications with Python, LLMs, and full-stack development">
-    <meta property="og:image" content="profile.jpg">
-    <meta property="og:url" content="https://sdn9300.github.io">
-    <meta property="og:type" content="website">
-    
+    <meta name="keywords" content="Data Scientist, Data Analyst, Generative AI, RAG, Python, SQL, Next.js, Streamlit">
     <title>Soumyadeep Nath | Data Scientist & Analyst</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,8 +14,6 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
         
         :root { --gold: #c9a84c; }
-        
-        * { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
         
         body { font-family: 'Inter', system_ui, sans-serif; }
         .heading-font { font-family: 'Space Grotesk', sans-serif; }
@@ -58,11 +48,13 @@
             font-weight: 600;
         }
         
-        .profile-img {
-            transition: transform 0.4s ease;
+        .skill-tag {
+            transition: all 0.2s ease;
         }
-        .profile-img:hover {
-            transform: scale(1.03);
+        .skill-tag:hover {
+            background-color: #c9a84c;
+            color: #111827;
+            transform: translateY(-2px);
         }
     </style>
 </head>
@@ -122,10 +114,10 @@
                 </div>
                 
                 <h1 class="heading-font text-6xl md:text-7xl font-semibold tracking-tighter mb-3">Soumyadeep Nath</h1>
-                <h2 class="text-4xl md:text-5xl text-[#c9a84c] font-semibold mb-6">Data Scientist & Analyst</h2>
+                <h2 class="text-4xl md:text-5xl text-[#c9a84c] font-semibold mb-6">Data Scientist &amp; Analyst</h2>
                 
                 <p class="text-xl text-zinc-400 max-w-lg">
-                    IIT Roorkee Executive PG in Data Science & AI | Building production AI applications with LLMs, RAG & full-stack development
+                    IIT Roorkee Executive PG in Data Science &amp; AI | Building production AI applications with LLMs, RAG &amp; full-stack development
                 </p>
                 
                 <div class="flex flex-wrap gap-4 mt-10">
@@ -142,7 +134,7 @@
                 <div class="relative">
                     <div class="absolute -inset-6 bg-gradient-to-br from-[#c9a84c]/20 rounded-[3rem] -rotate-6"></div>
                     <img src="profile.jpg" alt="Soumyadeep Nath" 
-                         class="profile-img relative w-80 h-80 md:w-96 md:h-96 object-cover rounded-3xl border border-[#c9a84c]/30 shadow-2xl">
+                         class="relative w-80 h-80 md:w-96 md:h-96 object-cover rounded-3xl border border-[#c9a84c]/30 shadow-2xl">
                 </div>
             </div>
         </div>
@@ -158,7 +150,7 @@
                 <div class="md:col-span-7 text-lg text-zinc-300 leading-relaxed">
                     <p class="mb-6">
                         With a strong foundation in English Literature from Presidency University and hands-on technical training 
-                        through IIT Roorkee’s Executive PG Programme in Data Science & AI, I bring a unique blend of analytical 
+                        through IIT Roorkee’s Executive PG Programme in Data Science &amp; AI, I bring a unique blend of analytical 
                         thinking, clear communication, and production-grade AI development skills.
                     </p>
                     <p>
@@ -169,36 +161,77 @@
         </div>
     </section>
 
-    <!-- SKILLS -->
+    <!-- UPDATED SKILLS SECTION -->
     <section id="skills" class="py-20 bg-[#111113]">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-12">Skills</h2>
+            
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Languages -->
                 <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-8">
                     <h3 class="text-xl font-semibold mb-6 flex items-center gap-3"><i class="fa-solid fa-code text-[#c9a84c]"></i> Languages</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">Python</span>
-                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">SQL</span>
-                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">TypeScript</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">Python</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">SQL</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">TypeScript</span>
                     </div>
                 </div>
+
+                <!-- Frameworks -->
                 <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-8">
-                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-3"><i class="fa-solid fa-brain text-[#c9a84c]"></i> Machine Learning & GenAI</h3>
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-3"><i class="fa-solid fa-layer-group text-[#c9a84c]"></i> Frameworks</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">scikit-learn</span>
-                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">RAG</span>
-                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">LLM APIs (Groq, OpenAI)</span>
-                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">Prompt Engineering</span>
-                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">FAISS / Chroma</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">Next.js</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">Streamlit</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">Tailwind CSS</span>
                     </div>
                 </div>
+
+                <!-- Tools -->
                 <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-8">
-                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-3"><i class="fa-solid fa-chart-line text-[#c9a84c]"></i> Data & Visualization</h3>
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-3"><i class="fa-solid fa-tools text-[#c9a84c]"></i> Tools</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">Pandas</span>
-                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">NumPy</span>
-                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">Matplotlib / Seaborn</span>
-                        <span class="px-5 py-2 bg-white/5 rounded-3xl text-sm">Plotly</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">Git / GitHub</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">Vercel</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">Jupyter Notebook</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">Google Colab</span>
+                    </div>
+                </div>
+
+                <!-- ML & GenAI -->
+                <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-8">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-3"><i class="fa-solid fa-brain text-[#c9a84c]"></i> Machine Learning &amp; GenAI</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">scikit-learn</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">RAG Systems</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">LLM APIs (Groq, OpenAI)</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">Prompt Engineering</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">FAISS / Chroma</span>
+                    </div>
+                </div>
+
+                <!-- Data & Visualization -->
+                <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-8">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-3"><i class="fa-solid fa-chart-line text-[#c9a84c]"></i> Data &amp; Visualization</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">Pandas</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">NumPy</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">Matplotlib / Seaborn</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">Plotly</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-8 lg:col-span-3">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-3"><i class="fa-solid fa-handshake text-[#c9a84c]"></i> Soft Skills</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">Critical Thinking</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">Analytical Reasoning</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">Data Storytelling</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">Communication</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">Problem Solving</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">Attention to Detail</span>
+                        <span class="skill-tag px-5 py-2 bg-white/5 rounded-3xl text-sm">Adaptability</span>
                     </div>
                 </div>
             </div>
@@ -209,7 +242,6 @@
     <section id="experience" class="py-20">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-12">Experience</h2>
-            
             <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-10">
                 <div class="flex justify-between items-start mb-8">
                     <div>
@@ -234,27 +266,22 @@
     <section id="projects" class="py-20 bg-[#111113]">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-4">Featured Projects</h2>
-            
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden">
                     <div class="h-2 bg-gradient-to-r from-[#c9a84c] to-amber-400"></div>
                     <div class="p-8">
                         <h3 class="text-2xl font-semibold mb-1">AlignResume — AI-Powered Resume Optimization Platform</h3>
                         <p class="text-[#c9a84c] text-sm mb-6">May 2026 • Live Project</p>
-                        
                         <p class="text-zinc-400 mb-8">
                             Full-stack AI application that parses resumes and job descriptions, scores alignment, and generates 
                             ATS-optimized bullet points using Groq (LLaMA 3.3 70B) with truthfulness guardrails.
                         </p>
-                        
                         <div class="flex flex-wrap gap-2 mb-8">
                             <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">Next.js</span>
                             <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">TypeScript</span>
                             <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">Groq API</span>
                             <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">RAG</span>
-                            <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">Playwright</span>
                         </div>
-                        
                         <div class="flex gap-4">
                             <a href="https://align-resume-beta.vercel.app" target="_blank" class="text-[#c9a84c] font-medium flex items-center gap-2">
                                 Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -272,17 +299,15 @@
     <!-- EDUCATION & CERTIFICATIONS -->
     <section id="education" class="py-20">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-12">Education & Certifications</h2>
-            
+            <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-12">Education &amp; Certifications</h2>
             <div class="space-y-12">
                 <div>
                     <div class="flex justify-between">
-                        <h3 class="text-2xl font-semibold">Executive PG Programme in Data Science & AI</h3>
+                        <h3 class="text-2xl font-semibold">Executive PG Programme in Data Science &amp; AI</h3>
                         <span class="text-zinc-400">Feb 2026 – Present</span>
                     </div>
                     <p class="text-[#c9a84c]">Indian Institute of Technology (IIT) Roorkee</p>
                 </div>
-                
                 <div>
                     <div class="flex justify-between">
                         <h3 class="text-2xl font-semibold">M.A. in English Literature (First Division)</h3>
@@ -290,7 +315,6 @@
                     </div>
                     <p class="text-[#c9a84c]">Presidency University, Kolkata</p>
                 </div>
-                
                 <div>
                     <div class="flex justify-between">
                         <h3 class="text-2xl font-semibold">B.A. Honours in English Literature (First Division)</h3>
