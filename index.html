@@ -32,7 +32,12 @@
         }
         .navbar-link:hover:after { width: 100%; }
         
-        .section-header:after {
+        /* Golden underline for all major section headings */
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title:after {
             content: '';
             position: absolute;
             width: 60px;
@@ -144,7 +149,7 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-12 gap-12">
                 <div class="md:col-span-5">
-                    <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-6">My Story</h2>
+                    <h2 class="section-title text-5xl font-semibold heading-font tracking-tighter mb-6">My Story</h2>
                 </div>
                 <div class="md:col-span-7 text-lg text-zinc-300 leading-relaxed">
                     <p>
@@ -160,7 +165,8 @@
     <!-- SKILLS -->
     <section id="skills" class="py-20 bg-[#111113]">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-12">Skills</h2>
+            <h2 class="section-title text-5xl font-semibold heading-font tracking-tighter mb-12">Skills</h2>
+            <!-- Skills content same as before -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-8">
                     <h3 class="text-xl font-semibold mb-6 flex items-center gap-3"><i class="fa-solid fa-code text-[#c9a84c]"></i> Languages</h3>
@@ -225,12 +231,13 @@
     <!-- EXPERIENCE -->
     <section id="experience" class="py-20">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-12">Experience</h2>
+            <h2 class="section-title text-5xl font-semibold heading-font tracking-tighter mb-12">Experience</h2>
             <div class="mb-12">
                 <h3 class="text-2xl font-semibold mb-8 flex items-center gap-3">
                     <i class="fa-solid fa-briefcase text-[#c9a84c] text-3xl"></i>
                     Experience
                 </h3>
+                <!-- Experience content -->
                 <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-10">
                     <div class="flex justify-between items-start mb-8">
                         <div>
@@ -252,10 +259,10 @@
         </div>
     </section>
 
-    <!-- PROJECTS (UPDATED with heading + icon) -->
+    <!-- PROJECTS -->
     <section id="projects" class="py-20 bg-[#111113]">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-12">Projects</h2>
+            <h2 class="section-title text-5xl font-semibold heading-font tracking-tighter mb-12">Projects</h2>
             
             <div class="mb-8">
                 <h3 class="text-2xl font-semibold mb-8 flex items-center gap-3">
@@ -296,7 +303,7 @@
     <!-- EDUCATION & CERTIFICATIONS -->
     <section id="education" class="py-20">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-12">Education &amp; Certifications</h2>
+            <h2 class="section-title text-5xl font-semibold heading-font tracking-tighter mb-12">Education &amp; Certifications</h2>
             
             <!-- Education -->
             <div class="mb-16">
@@ -359,7 +366,7 @@
     <!-- CONTACT -->
     <section id="contact" class="py-20 bg-[#111113]">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-8">Let's Connect</h2>
+            <h2 class="section-title text-5xl font-semibold heading-font tracking-tighter mb-8">Let's Connect</h2>
             <div class="grid md:grid-cols-2 gap-12">
                 <div>
                     <a href="mailto:soumyadeep9300@gmail.com" class="flex items-center gap-4 text-xl hover:text-[#c9a84c]">
