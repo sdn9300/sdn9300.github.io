@@ -161,7 +161,6 @@
     <section id="skills" class="py-20 bg-[#111113]">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-12">Skills</h2>
-            
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-8">
                     <h3 class="text-xl font-semibold mb-6 flex items-center gap-3"><i class="fa-solid fa-code text-[#c9a84c]"></i> Languages</h3>
@@ -227,53 +226,66 @@
     <section id="experience" class="py-20">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-12">Experience</h2>
-            <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-10">
-                <div class="flex justify-between items-start mb-8">
-                    <div>
-                        <h3 class="text-2xl font-semibold">Data Science Learner (Executive PG Programme)</h3>
-                        <p class="text-[#c9a84c]">IIT Roorkee • Roorkee, India</p>
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold mb-8 flex items-center gap-3">
+                    <i class="fa-solid fa-briefcase text-[#c9a84c] text-3xl"></i>
+                    Experience
+                </h3>
+                <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-10">
+                    <div class="flex justify-between items-start mb-8">
+                        <div>
+                            <h4 class="text-2xl font-semibold">Data Science Learner (Executive PG Programme)</h4>
+                            <p class="text-[#c9a84c]">IIT Roorkee • Roorkee, India</p>
+                        </div>
+                        <p class="text-sm text-zinc-400">Feb 2026 – Present</p>
                     </div>
-                    <p class="text-sm text-zinc-400">Feb 2026 – Present</p>
+                    <ul class="space-y-4 text-zinc-300">
+                        <li class="flex gap-4"><i class="fa-solid fa-circle-check text-[#c9a84c] mt-1.5"></i> Engineered data pipelines and automated ETL workflows using Python (Pandas, NumPy).</li>
+                        <li class="flex gap-4"><i class="fa-solid fa-circle-check text-[#c9a84c] mt-1.5"></i> Queried relational databases using advanced SQL (window functions, joins, subqueries).</li>
+                        <li class="flex gap-4"><i class="fa-solid fa-circle-check text-[#c9a84c] mt-1.5"></i> Built EDA frameworks with statistical reasoning, hypothesis testing, and A/B testing.</li>
+                        <li class="flex gap-4"><i class="fa-solid fa-circle-check text-[#c9a84c] mt-1.5"></i> Developed supervised ML models (Random Forest, Gradient Boosting) using scikit-learn.</li>
+                        <li class="flex gap-4"><i class="fa-solid fa-circle-check text-[#c9a84c] mt-1.5"></i> Implemented Generative AI applications with LLM APIs, structured prompts, and RAG systems (FAISS/Chroma).</li>
+                        <li class="flex gap-4"><i class="fa-solid fa-circle-check text-[#c9a84c] mt-1.5"></i> Created interactive dashboards and reproducible Jupyter notebooks.</li>
+                    </ul>
                 </div>
-                <ul class="space-y-4 text-zinc-300">
-                    <li class="flex gap-4"><i class="fa-solid fa-circle-check text-[#c9a84c] mt-1.5"></i> Engineered data pipelines and automated ETL workflows using Python (Pandas, NumPy).</li>
-                    <li class="flex gap-4"><i class="fa-solid fa-circle-check text-[#c9a84c] mt-1.5"></i> Queried relational databases using advanced SQL (window functions, joins, subqueries).</li>
-                    <li class="flex gap-4"><i class="fa-solid fa-circle-check text-[#c9a84c] mt-1.5"></i> Built EDA frameworks with statistical reasoning, hypothesis testing, and A/B testing.</li>
-                    <li class="flex gap-4"><i class="fa-solid fa-circle-check text-[#c9a84c] mt-1.5"></i> Developed supervised ML models (Random Forest, Gradient Boosting) using scikit-learn.</li>
-                    <li class="flex gap-4"><i class="fa-solid fa-circle-check text-[#c9a84c] mt-1.5"></i> Implemented Generative AI applications with LLM APIs, structured prompts, and RAG systems (FAISS/Chroma).</li>
-                    <li class="flex gap-4"><i class="fa-solid fa-circle-check text-[#c9a84c] mt-1.5"></i> Created interactive dashboards and reproducible Jupyter notebooks.</li>
-                </ul>
             </div>
         </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- PROJECTS (UPDATED with heading + icon) -->
     <section id="projects" class="py-20 bg-[#111113]">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-4">Featured Projects</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden">
-                    <div class="h-2 bg-gradient-to-r from-[#c9a84c] to-amber-400"></div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-semibold mb-1">AlignResume — AI-Powered Resume Optimization Platform</h3>
-                        <p class="text-[#c9a84c] text-sm mb-6">May 2026 • Live Project</p>
-                        <p class="text-zinc-400 mb-8">
-                            Full-stack AI application that parses resumes and job descriptions, scores alignment, and generates 
-                            ATS-optimized bullet points using Groq (LLaMA 3.3 70B) with truthfulness guardrails.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-8">
-                            <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">Next.js</span>
-                            <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">TypeScript</span>
-                            <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">Groq API</span>
-                            <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">RAG</span>
-                        </div>
-                        <div class="flex gap-4">
-                            <a href="https://align-resume-beta.vercel.app" target="_blank" class="text-[#c9a84c] font-medium flex items-center gap-2">
-                                Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                            <a href="https://github.com/sdn9300/align-resume" target="_blank" class="text-[#c9a84c] font-medium flex items-center gap-2">
-                                GitHub <i class="fa-brands fa-github"></i>
-                            </a>
+            <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-12">Projects</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold mb-8 flex items-center gap-3">
+                    <i class="fa-solid fa-folder-open text-[#c9a84c] text-3xl"></i>
+                    Featured Projects
+                </h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden">
+                        <div class="h-2 bg-gradient-to-r from-[#c9a84c] to-amber-400"></div>
+                        <div class="p-8">
+                            <h4 class="text-2xl font-semibold mb-1">AlignResume — AI-Powered Resume Optimization Platform</h4>
+                            <p class="text-[#c9a84c] text-sm mb-6">May 2026 • Live Project</p>
+                            <p class="text-zinc-400 mb-8">
+                                Full-stack AI application that parses resumes and job descriptions, scores alignment, and generates 
+                                ATS-optimized bullet points using Groq (LLaMA 3.3 70B) with truthfulness guardrails.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">Next.js</span>
+                                <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">TypeScript</span>
+                                <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">Groq API</span>
+                                <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">RAG</span>
+                            </div>
+                            <div class="flex gap-4">
+                                <a href="https://align-resume-beta.vercel.app" target="_blank" class="text-[#c9a84c] font-medium flex items-center gap-2">
+                                    Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                                <a href="https://github.com/sdn9300/align-resume" target="_blank" class="text-[#c9a84c] font-medium flex items-center gap-2">
+                                    GitHub <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -286,33 +298,42 @@
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="section-header text-5xl font-semibold heading-font tracking-tighter mb-12">Education &amp; Certifications</h2>
             
-            <div class="space-y-12">
-                <div>
-                    <div class="flex justify-between">
-                        <h3 class="text-2xl font-semibold">Executive PG Programme in Data Science &amp; AI</h3>
-                        <span class="text-zinc-400">Feb 2026 – Present</span>
+            <!-- Education -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-8 flex items-center gap-3">
+                    <i class="fa-solid fa-graduation-cap text-[#c9a84c] text-3xl"></i>
+                    Education
+                </h3>
+                <div class="space-y-12">
+                    <div>
+                        <div class="flex justify-between">
+                            <h4 class="text-2xl font-semibold">Executive PG Programme in Data Science &amp; AI</h4>
+                            <span class="text-zinc-400">Feb 2026 – Present</span>
+                        </div>
+                        <p class="text-[#c9a84c]">Indian Institute of Technology (IIT) Roorkee</p>
                     </div>
-                    <p class="text-[#c9a84c]">Indian Institute of Technology (IIT) Roorkee</p>
-                </div>
-                <div>
-                    <div class="flex justify-between">
-                        <h3 class="text-2xl font-semibold">M.A. in English Literature (First Division)</h3>
-                        <span class="text-zinc-400">Oct 2022 – Jul 2024</span>
+                    <div>
+                        <div class="flex justify-between">
+                            <h4 class="text-2xl font-semibold">M.A. in English Literature (First Division)</h4>
+                            <span class="text-zinc-400">Oct 2022 – Jul 2024</span>
+                        </div>
+                        <p class="text-[#c9a84c]">Presidency University, Kolkata</p>
                     </div>
-                    <p class="text-[#c9a84c]">Presidency University, Kolkata</p>
-                </div>
-                <div>
-                    <div class="flex justify-between">
-                        <h3 class="text-2xl font-semibold">B.A. Honours in English Literature (First Division)</h3>
-                        <span class="text-zinc-400">Sep 2019 – Jul 2022</span>
+                    <div>
+                        <div class="flex justify-between">
+                            <h4 class="text-2xl font-semibold">B.A. Honours in English Literature (First Division)</h4>
+                            <span class="text-zinc-400">Sep 2019 – Jul 2022</span>
+                        </div>
+                        <p class="text-[#c9a84c]">Presidency University, Kolkata</p>
                     </div>
-                    <p class="text-[#c9a84c]">Presidency University, Kolkata</p>
                 </div>
             </div>
-            
-            <div class="mt-16">
+
+            <!-- Certifications -->
+            <div>
                 <h3 class="text-2xl font-semibold mb-8 flex items-center gap-3">
-                    <i class="fa-solid fa-award text-[#c9a84c]"></i> Certifications
+                    <i class="fa-solid fa-award text-[#c9a84c] text-3xl"></i>
+                    Certifications
                 </h3>
                 <div class="grid md:grid-cols-2 gap-6">
                     <div class="bg-zinc-900/50 border border-white/10 rounded-3xl p-6">
