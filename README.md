@@ -3,8 +3,7 @@
 [![Portfolio](https://img.shields.io/badge/Live_Portfolio-Visit-0A0A0A?style=for-the-badge&logo=github&logoColor=white)](https://sdn9300.github.io)
 
 > 🚀 **For the complete interactive experience, visit [sdn9300.github.io](https://sdn9300.github.io)** — this repo is the source code behind the site.
-Modern portfolio built to showcase my skills as a **Data Scientist & Analyst**.
-
+Built with HTML, CSS, and JavaScript — single-file, no frameworks, no build step.
 ---
 
 ## 🎯 About Me
