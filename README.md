@@ -2,6 +2,8 @@
 
 [![Portfolio](https://img.shields.io/badge/Live_Portfolio-Visit-0A0A0A?style=for-the-badge&logo=github&logoColor=white)](https://sdn9300.github.io)
 
+«🚀 For the complete interactive experience, visit https://sdn9300.github.io. This repository contains the source code powering the portfolio website.»
+
 Modern portfolio built to showcase my skills as a **Data Scientist & Analyst**.
 
 ---
