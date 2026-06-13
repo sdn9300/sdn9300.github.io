@@ -309,7 +309,6 @@
                 </h3>
                 <div class="grid md:grid-cols-2 gap-8">
 
-                  ```html
 <!-- Future Fit Project -->
 <div class="bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden">
     <div class="h-2 bg-gradient-to-r from-[#c9a84c] to-amber-400"></div>
@@ -323,43 +322,21 @@
             June 2026 • Live Project
         </p>
 
-        <p class="text-zinc-400 mb-6">
-            Developed an end-to-end Time Series and NLP analytics platform that processed 
+        <p class="text-zinc-400 mb-8">
+            Built an end-to-end Time Series and NLP analysis platform processing 
             <strong>224,605 skill mentions</strong> extracted from 
-            <strong>50,000+ global AI and Data Science job postings (2020–2026)</strong>. 
-            Integrated market basket analysis, demand forecasting, and LLM-powered career guidance 
-            to uncover emerging skill trends and generate personalized learning recommendations.
+            <strong>50,000+ global AI/Data Science job postings (2020–2026)</strong>, 
+            using a taxonomy-driven regex extraction engine with word-boundary matching 
+            across <strong>100+ skills</strong>. Engineered a 10-step deterministic 
+            cleaning pipeline and developed a Market Basket Analysis engine mapping 
+            <strong>230 frequent skill itemsets</strong> to uncover strong skill 
+            co-occurrence patterns. Implemented a tiered forecasting framework using 
+            <strong>Prophet</strong> to project skill demand into 2027 with dynamic 
+            fallback mechanisms for forecast stability. Deployed a 
+            <strong>6-panel Streamlit dashboard</strong> featuring interactive Plotly 
+            visualizations and a <strong>Groq-powered Skill Gap Advisor (LLaMA 3.3 70B)</strong> 
+            that generates contextual learning paths using real market intelligence.
         </p>
-
-        <div class="space-y-3 text-sm text-zinc-400 mb-8">
-            <p>
-                • Built a taxonomy-driven skill extraction engine using regex-based NLP techniques 
-                to identify <strong>100+ skills</strong> from job postings and engineered a 
-                <strong>10-step deterministic data cleaning pipeline</strong>.
-            </p>
-
-            <p>
-                • Developed a Market Basket Analysis engine using 
-                <strong>Apriori association rule mining</strong>, discovering 
-                <strong>230 frequent skill itemsets</strong> and identifying strong 
-                co-occurrence relationships such as 
-                <strong>PyTorch → TensorFlow</strong>.
-            </p>
-
-            <p>
-                • Implemented a tiered forecasting framework using 
-                <strong>Prophet</strong> to project skill demand into 2027, 
-                with automated fallback to linear trend extrapolation based on 
-                confidence interval stability thresholds.
-            </p>
-
-            <p>
-                • Deployed a <strong>6-panel Streamlit dashboard</strong> featuring 
-                interactive Plotly visualizations and a 
-                <strong>Groq-powered Skill Gap Advisor (LLaMA 3.3 70B)</strong> 
-                that generates contextual learning paths using real market intelligence.
-            </p>
-        </div>
 
         <div class="flex flex-wrap gap-2 mb-8">
             <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">Python</span>
@@ -370,8 +347,6 @@
             <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">mlxtend (Apriori)</span>
             <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">SciPy</span>
             <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">Groq API</span>
-            <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">NLP</span>
-            <span class="text-xs px-4 py-1.5 bg-white/10 rounded-3xl">Time Series Forecasting</span>
         </div>
 
         <div class="flex gap-4 flex-wrap">
@@ -391,7 +366,6 @@
         </div>
     </div>
 </div>
-
 
                     <!-- Existing AlignResume Project -->
                     <div class="bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden">
