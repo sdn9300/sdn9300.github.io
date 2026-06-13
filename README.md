@@ -55,10 +55,26 @@ Critical Thinking • Data Storytelling • Communication • Problem Solving �
 
 ### [AlignResume](https://align-resume-beta.vercel.app)
 **AI-Powered Resume Optimization Platform**  
-- Full-stack AI application built with Next.js + Groq (LLaMA 3.3)
-- Parses resumes & job descriptions, scores alignment, and generates ATS-optimized bullets
-- Includes truthfulness guardrails to prevent hallucination
+- Architected and deployed an end-to-end full-stack AI web application that parses resumes and job descriptions, scores
+alignment quality, and generates ATS-optimized bullet rewrites via a structured JSON prompt pipeline over the Groq API —
+with Zod schema validation ensuring deterministic, parseable LLM outputs.
+- Implemented an automated truthfulness guardrail layer that validates rewritten bullets against the original resume, blocking
+export if hallucinated metrics, employers, or skills are detected — prioritizing honesty over inflation.
+- Engineered Playwright-based headless PDF export, rate-limited API proxy (10 runs/hr per IP), and GitHub-Vercel CI/CD
+auto-deploy; deepened expertise in LLM application architecture, prompt engineering, and production-grade full-stack AI
+deployment.
 
+### [Future Fit](https://skilltrendanalysis-rf3zefgsjaa4l9f8pu2prb.streamlit.app)
+**AI-Powered Skill Trend Intelligence Platform**  
+- Built an end-to-end Time Series and NLP analysis platform processing 224,605 skill mentions extracted from 50,000+ global
+AI/Data Science job postings (2020–2026), using a taxonomy-driven regex extraction engine with word-boundary matching across 100+ skills.
+- Engineered a 10-step deterministic cleaning pipeline and developed a Market Basket Analysis (Apriori) engine mapping 230
+frequent skill itemsets and extracting association rules (lift ≥0.90, confidence ≥0.38) to identify strong co-occurrence trends
+like PyTorch → TensorFlow
+- Implemented a tiered yearly forecasting model using Prophet to project demand shares into 2027, integrating a dynamic
+fallback to linear trend extrapolation if the 80% confidence interval width exceeded a 1.5× variance threshold.
+- Deployed a 6-panel Streamlit dashboard featuring Plotly charts, interactive association rules, and a Groq LLM-powered Skill
+Gap Advisor enriched with association rule insights to generate contextual learning paths.
 ---
 📫 Connect With Me
 
