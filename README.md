@@ -1,4 +1,4 @@
-| # Soumyadeep Nath | Data Scientist - Data Analyst - Full Stack AI Engineer |
+# | Soumyadeep Nath | Data Scientist - Data Analyst - Full Stack AI Engineer |
 
 [![Portfolio](https://img.shields.io/badge/Live_Portfolio-Visit-0A0A0A?style=for-the-badge&logo=github&logoColor=white)](https://sdn9300.github.io)
 
