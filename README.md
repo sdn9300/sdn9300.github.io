@@ -67,6 +67,14 @@ Playwright • BeautifulSoup4 • Firecrawl API • Google Sheets API (gspread) 
 
 ## ✨ Featured Project
 
+### [Gleaner](https://github.com/sdn9300/gleaner-job-scout)
+**Multi-Board Job Scraper & ETL Pipeline**  
+- Architected a modular ETL pipeline using the Adapter Design Pattern to aggregate job listings from multiple platforms including Naukri, Indeed, RemoteOK, and Wellfound.
+- Engineered resilient scraping workflows using custom headers, anti-bot techniques, and Firecrawl structured extraction.
+- Built exact-match and similarity-based deduplication pipelines alongside role relevance and location filtering systems.
+- Automated reporting through CSV exports and cloud-hosted Google Sheets synchronization.
+- Developed a configurable CLI system driven by centralized YAML configuration files for flexible execution and logging control.
+
 ### [AlignResume](https://align-resume-beta.vercel.app)
 **AI-Powered Resume Optimization Platform**  
 - Architected and deployed an end-to-end full-stack AI web application that parses resumes and job descriptions, scores
