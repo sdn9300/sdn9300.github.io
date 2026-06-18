@@ -1,4 +1,4 @@
-# Soumyadeep Nath | Data Scientist & Analyst & AI Engineer
+# Soumyadeep Nath | Data Scientist * Data Analyst * Full Stack AI Engineer
 
 [![Portfolio](https://img.shields.io/badge/Live_Portfolio-Visit-0A0A0A?style=for-the-badge&logo=github&logoColor=white)](https://sdn9300.github.io)
 
@@ -8,7 +8,7 @@ Built with HTML, CSS, and JavaScript — single-file, no frameworks, no build st
 
 ## 🎯 About Me
 
-I'm a Data Scientist and AI Builder based in Kolkata, India — currently completing 
+I'm a Data Scientist, Data Analyst and AI Engineer based in Kolkata, India — currently completing 
 an **Executive PG Programme in Data Science & AI at IIT Roorkee**, working hands-on 
 with Python, SQL, Machine Learning, and production-grade Generative AI systems.
 
