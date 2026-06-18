@@ -35,10 +35,10 @@ I specialize in turning raw data into actionable business insights using Python,
 ## 🛠️ Tech Stack
 
 **Languages**  
-Python • SQL • TypeScript
+Python • SQL • TypeScript  • JavaScript
 
 **Frameworks**  
-Next.js • Streamlit • Tailwind CSS
+Next.js • Streamlit • Vercel • Git / GitHub • YAML • Streamlit • Tailwind CSS • Firecrawl API • BeautifulSoup4
 
 **Tools**  
 Git • GitHub • Vercel • Jupyter Notebook • Google Colab
