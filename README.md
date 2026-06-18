@@ -35,7 +35,7 @@ I specialize in turning raw data into actionable business insights using Python,
 ## 🛠️ Tech Stack
 
 **Languages**  
-Python • SQL • TypeScript  • JavaScript
+Python • SQL • TypeScript  • R
 
 **Frameworks**  
 Next.js • Streamlit • Vercel • Git / GitHub • YAML • Streamlit • Tailwind CSS • Firecrawl API • BeautifulSoup4
@@ -46,7 +46,7 @@ Git • GitHub • Vercel • Jupyter Notebook • Google Colab
 **Machine Learning & Generative AI**  
 scikit-learn • RAG Systems • LLM APIs (Groq, OpenAI) • Prompt Engineering • FAISS / Chroma
 
-**Soft Skills**  
+**Professional Skills**  
 Critical Thinking • Data Storytelling • Communication • Problem Solving • Analytical Reasoning
 
 ---
