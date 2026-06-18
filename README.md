@@ -34,20 +34,34 @@ I specialize in turning raw data into actionable business insights using Python,
 
 ## 🛠️ Tech Stack
 
-**Languages**  
-Python • SQL • TypeScript  • R
+### Languages
 
-**Frameworks**  
-Next.js • Streamlit • Vercel • Git / GitHub • YAML • Streamlit • Tailwind CSS • Firecrawl API • BeautifulSoup4
+Python • SQL • TypeScript • R
 
-**Tools**  
-Git • GitHub • Vercel • Jupyter Notebook • Google Colab
+### Frameworks & Platforms
 
-**Machine Learning & Generative AI**  
-scikit-learn • RAG Systems • LLM APIs (Groq, OpenAI) • Prompt Engineering • FAISS / Chroma
+Next.js • Tailwind CSS • Streamlit • Vercel • Git • GitHub
 
-**Professional Skills**  
-Critical Thinking • Data Storytelling • Communication • Problem Solving • Analytical Reasoning
+### Data Science & Analytics
+
+NumPy • Pandas • SciPy • EDA • Data Cleaning • ETL Pipelines • Statistical Analysis • Hypothesis Testing • A/B Testing • Data Storytelling
+
+### Machine Learning
+
+scikit-learn • Regression • Classification • Random Forest • Gradient Boosting • Model Evaluation • Time Series Forecasting (Prophet) • Association Rule Mining (Apriori)
+
+### Generative AI
+
+LLM APIs (Groq) • Prompt Engineering • Structured JSON Pipelines • RAG • Embeddings • FAISS • Chroma • Guardrail Design
+
+### Visualization
+
+Plotly • Matplotlib • Seaborn • Jupyter Notebook • Power BI • Google Colab
+
+### Full-Stack & Automation
+
+Playwright • BeautifulSoup4 • Firecrawl API • Google Sheets API (gspread) • YAML • Zod
+
 
 ---
 
