@@ -12,16 +12,6 @@ I'm a Data Scientist, Data Analyst and AI Engineer based in Kolkata, India — c
 an **Executive PG Programme in Data Science & AI at IIT Roorkee**, working hands-on 
 with Python, SQL, Machine Learning, and production-grade Generative AI systems.
 
-My background is unusual: I studied English Literature at Presidency University before 
-deliberately pivoting into data science. That path isn't a gap — it's an edge. I think 
-carefully about how models communicate, not just whether they're accurate. It shapes 
-how I build: from guardrail design to documentation to translating complex outputs into 
-narratives stakeholders actually understand.
-
-My most recent project, **AlignResume**, is a full-stack AI web app that scores resumes 
-against job descriptions and rewrites ATS bullets via LLaMA 3.3 70B — with a 
-truthfulness guardrail layer that blocks export if hallucinated metrics or skills are 
-detected. It's live, deployed, and rate-limited. Not a demo. A real product.
 
 I work across the full stack of a data/AI role: ETL pipelines, SQL analytics, supervised 
 ML (scikit-learn), RAG systems with FAISS/Chroma, LLM API integration, and Next.js 
