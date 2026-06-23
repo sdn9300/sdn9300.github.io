@@ -46,12 +46,11 @@ LLM APIs (Groq) • Prompt Engineering • Structured JSON Pipelines • RAG •
 
 ### Visualization
 
-Plotly • Matplotlib • Seaborn • Jupyter Notebook • Power BI • Google Colab
+Plotly • Matplotlib • Seaborn • Power BI 
 
 ### Full-Stack & Automation
 
-Playwright • BeautifulSoup4 • Firecrawl API • Google Sheets API (gspread) • YAML • Zod
-
+Playwright • BeautifulSoup4 • Firecrawl API • Google Sheets API (gspread) • Gmail API • Google OAuth2 • Redis • SQLite • Prometheus • YAML • Zod
 
 ---
 
