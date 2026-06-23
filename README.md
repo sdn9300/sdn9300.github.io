@@ -65,7 +65,7 @@ Playwright • BeautifulSoup4 • Firecrawl API • Google Sheets API (gspread) 
 - Automated reporting through CSV exports and cloud-hosted Google Sheets synchronization.
 - Developed a configurable CLI system driven by centralized YAML configuration files for flexible execution and logging control.
 
-### [Overture Outreach]([https://align-resume-beta.vercel.app](https://frontend-three-azure-97.vercel.app))
+### [Overture Outreach](https://frontend-three-azure-97.vercel.app)
 **AI-Powered Cold Email Outreach Platform**  
 - Architected and implemented a modular backend outreach engine using Python that orchestrates a dual-stage execution pipeline — HTML formatting followed by dynamic tone polishing via the Groq LLM API.
 - Configured secure Google OAuth2 flow handling using Google Client APIs to obtain authorization tokens for rate-safe email delivery via the Gmail API.
