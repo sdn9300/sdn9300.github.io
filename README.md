@@ -54,7 +54,7 @@ Playwright • BeautifulSoup4 • Firecrawl API • Google Sheets API (gspread) 
 
 ---
 
-## ✨ Featured Project
+## ✨ Featured Projects
 
 ### [Gleaner](https://github.com/sdn9300/gleaner-job-scout)
 **Multi-Board Job Scraper & ETL Pipeline**  
