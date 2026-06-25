@@ -34,11 +34,11 @@ Next.js • Tailwind CSS • Streamlit • Vercel • Git • GitHub
 
 ### Data Science & Analytics
 
-NumPy • Pandas • SciPy • EDA • Data Cleaning • ETL Pipelines • Statistical Analysis • Hypothesis Testing • A/B Testing • Data Storytelling
+NumPy • Pandas • SciPy • EDA • Data Cleaning • ETL Pipelines • Feature Engineering • Statistical Analysis • Hypothesis Testing • A/B Testing • Data Storytelling • Geospatial Analysis • Sports Analytics
 
-### Machine Learning
+### Machine Learning & Statistical Modeling
 
-scikit-learn • Regression • Classification • Random Forest • Gradient Boosting • Model Evaluation • Time Series Forecasting (Prophet) • Association Rule Mining (Apriori)
+scikit-learn • Regression • Classification • Random Forest • Gradient Boosting • Generalized Linear Mixed Models (GLMM) • Negative Binomial Regression • Model Evaluation • Time Series Forecasting (Prophet) • Association Rule Mining (Apriori)
 
 ### Generative AI
 
@@ -46,11 +46,16 @@ LLM APIs (Groq) • Prompt Engineering • Structured JSON Pipelines • RAG •
 
 ### Visualization
 
-Plotly • Matplotlib • Seaborn • Power BI 
+Plotly • Matplotlib • Seaborn • Recharts • Power BI
+
+### APIs & Data Sources
+
+Firecrawl API • Google Sheets API (gspread) • Gmail API • Google OAuth2 • Meteostat API • Open-Elevation API • StatsBomb • FBref
 
 ### Full-Stack & Automation
 
-Playwright • BeautifulSoup4 • Firecrawl API • Google Sheets API (gspread) • Gmail API • Google OAuth2 • Redis • SQLite • Prometheus • YAML • Zod
+Playwright • BeautifulSoup4 • PapaParse • Redis • SQLite • Prometheus • YAML • Zod
+
 
 ---
 
